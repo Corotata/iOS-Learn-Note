@@ -1,0 +1,20 @@
+>做转场动画需要注意的细节
+>
+>比如现在需要从FirstViewController 跳到 SecondViewController 
+>那么我们需要，设置SecondViewController的transitioningDelegate = ？，而这个？就是要去告诉系统，他的动画的需要由谁去执行，通常内容简单的情况我，我们都直接SecondViewController. transitioningDelegate = self的形式来处理，这样就少了一个类，
+>
+>
+>
+
+~~~
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source;
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed;
+
+- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator;
+
+- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator;
+
+- (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0);
+
+~~~
