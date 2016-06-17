@@ -31,7 +31,7 @@
 |Command + option + S| Save all|保存全部|
 |Command + Shift + S| Duplicate|拷贝当前文件，另存为新的并引入工程|
 |Command + Shift + Option + S| Duplicate|将当前文件另存为新的，原来的还会在工程中，只是不引入|
-|Command + Control + S|Create Snapshot|创建镜像__(暂不知道有啥鸟用)__|
+|Command + Control + S|Create Snapshot|创建镜像__(用以比对)__|
 |Command + P|Print|打印当前页，可存为PDF|
 |Command + Shift + P|Print Setup|设置打印参数|
 
@@ -42,18 +42,23 @@
 |Command + Control + 空格||显示特殊符号的输入|
 |Command + Delete| |删除整行|
 |Command + Option + 左（右）箭头||折叠或展开代码|
-|Command + 左箭头||跳到当前行最左|
-|Command + 左箭头||跳到当前行最右|
 
+###左右箭头
+|快捷键|中文|
+|:--------|----------|-------:|
+|Command + 左箭头|跳到当前行最左|
+|Command + 左箭头|跳到当前行最右|
+|Command + Shift + 左箭头|当前行光标以左的全部选中|
+|Command + Shift + 右箭头|当前行光标以右的全部选中|
 
 ###上下箭头
-|快捷键|英文|中文|
+|快捷键|中文|
 |:--------|----------|-------:|
-|Command + 上箭头||跳到当前文件最上|
-|Command + 下箭头||跳到当前文件最下|
-|Command + Shift +上箭头||当前光标以上的全部选中|
-|Command + Shift +下箭头||当前光标以下的全部选中|
-|Command + 下箭头||跳到当前文件最下|
+|Command + 上箭头|跳到当前文件最上|
+|Command + 下箭头|跳到当前文件最下|
+|Command + Shift +上箭头|当前光标以上的全部选中|
+|Command + Shift +下箭头|当前光标以下的全部选中|
+
 ### 符号[、符号]
 |快捷键|英文|中文|
 |:--------|----------|-------:|
@@ -221,3 +226,17 @@
 |Command + 回车|Show Standard Editor|恢复单编辑窗口|
 |Command + Option+ 回车|Show Assistant Editor|启动双编辑窗口|
 |Command + Option + Shift + 回车|Show Version Edirtor|显示版本编辑器|
+
+
+
+###XIB或者Storyboard中操作
+
+|快捷键|中文|
+|:--------|-----------:|
+|Command + =|选中一控件，如button，执行FitSize|
+|Command + Option |选中一控件，显示标尺|
+|Command + Option + =|更新控件约束位置|
+|Command + 上下左右箭头|缓慢移动某控件|
+|Command + Shift 上下左右箭头|快速移动某控件|
+|Command + Option 上下左右箭头|带标尺缓慢移动某控件|
+|Command + Option + Shift + 上下左右箭头|带标尺快速移动某控件|
